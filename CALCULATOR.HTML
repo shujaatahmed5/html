@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<HTML>
+     <HEAD>
+          <SCRIPT>
+               FUNCTION INSERT(NUM)
+                        DOCUMENT.FORM.TEXTVIEW.VALUE=DOCUMENT.FORM.TEXTVIEW.VALUE+NUM
+               }
+               function equal(){
+                    var exp=document.form.textview.value,
+                    if(exp){
+                         document.form.textview.value=eval(exp)
+                    }
+               }
+               function clear(){
+                    document.form.textview.value=;
+               }
+               function.back)(){
+                    var exp=document.form.textview.value;
+                    document.form.textview.value=exp_substring(0,exp.length-1);
+               }
+          </SCRIPT>
+          <STYLE>
+                 *{ 
+                    MARGIN:0;
+                    PADDING:0;
+                  }
+                   BUTTON[
+                       WIDTH:50;
+                       HEIGHT:50;
+                       FONT-SIZE:25;
+                       MARGIN:2;
+                       CURSOR:POINTER
+                       BACKGROUND:RED 
+                       BORDER:NONE;
+                       COLOR:WHITE;
+                  }
+                   TEXTVIEW[
+                           WIDTH:217;
+                           MARGIN:5
+                           FONT-SIZE:25;
+                           PADDING:5;
+                           BORDER:NONE;
+                           COLOR:RED
+                  }
+                   MAIN[
+                       POSITION:ABSOLUTE
+                       TOP:50;
+                       LEFT:50; 
+                       TRANSFORM:TRANSLATEX(-50%)TRANSLATE(-50%);
+                     
+                   }
+                     BG{
+                          BACKGROUND:LINEAR-GRADIENT(TO RIGTH POWDERBLUE,GREY )
+                          HEIGHT:100%;
+                   }       
+          </STYLE>
+     </HEAD>
+     <BODY>
+          <DIV CLASS=
+          <DIV CLASS="MAIN">
+              <FORM NAME="FORM">
+                    <INPUT CLASS="TEXTVIEW"NAME=TEXTVIEW">
+              </FROM>
+              <TABLE>
+                    <TR>
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="C"ONCLICK="CLEAN()"></TD>
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="<"ONCLICK="BACK()"></TD>   
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="/"ONCLICK="INSERT(/)"></TD>
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="X"ONCLICK="INSERT(X)"></TD>  
+                    </TR>
+                     <TR>
+                       <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="7"ONCLICK="INSERT(7)"></TD>
+                       <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="8"ONCLICK="INSERT(8)"></TD>   
+                       <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="9"ONCLICK="INSERT(9)"></TD>
+                       <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="-"ONCLICK="INSERT(-)"></TD>  
+                    </TR>
+                     <TR>
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="4"ONCLICK="INSERT(4)"></TD>
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="5"ONCLICK="INSERT(5)"></TD>   
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="6"ONCLICK="INSERT(6)"></TD>
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="+"ONCLICK="INSERT(+)"></TD>  
+                    </TR>
+                     <TR>
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="1"ONCLICK="INSERT(1)"></TD>
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="2"ONCLICK="INSERT(2)"></TD>   
+                        <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="3"ONCLICK="INSERT(3)"></TD>
+                        <TD ROWSPAN=5><INPUT CLASS="BUTTON".STYLE="HEIGHT.106"TYPE="BUTTON"VALUE="="ONCLICK="INSERT(=)"></TD>  
+                    </TR>
+                    <TR>
+                       <TD COLSPAN=2><INPUT CLASS="BUTTON"STYLE=WIDTH.1.TYPE="BUTTON"VALUE="0"ONCLICK="INSERT(0)"></TD>
+                       <TD><INPUT CLASS="BUTTON"TYPE="BUTTON"VALUE="."ONCLICK="INSERT(.)"></TD> 
+                    </TR>     
+               </TABLE>
+          </DIV>
